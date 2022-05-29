@@ -2,7 +2,10 @@ body, *{
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    background-image: url(../../image/background/background.svg);
+}
+
+body{
+    background-image: url(../image/background/background.svg);
     background-size: cover;
 }
 
