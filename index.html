@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="./image/logo/TCFLogo.png">
+    <title>CSS Exercise | TheCodeFather</title>
+</head>
+<body>
+    <main class="body">
+        
+        <div class="finish-game-back">
+            <div class="finish-game">
+                <h3>Շնորհավորում եմ</h3>
+                <p>Դուք ավարտեցիք խաղը անցնելով բոլոր մակարդակները</p>
+                <button id="see-levels">Դիտել Մակարդակները</button>
+                <div class="btn">
+                    <button onclick="window.location.reload()">Նորից Խաղալ</button>
+                    <a href="https://thecodefatherofficial.github.io/main/">Դուրս Գալ</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://thecodefatherofficial.github.io/main/" class="home-btn" target="_blank">
+            <img src="./image/icons/home.svg" alt="">
+        </a>
+
+        <nav class="menu">
+            <div class="white"></div>
+            <ul>
+                <li><article></article>
+                    <div class="open" id="lvl1"><img src="./image/icons/open-lock.svg" alt=""></div>
+                    <span>1</span>Text Shadow</li>
+                <li><article></article>
+                    <div class="closed" id="lvl2"><img src="./image/icons/close-lock.svg" alt=""></div>
+                    <span>2</span>Opacity</li>
+                <li><article></article>
+                    <div class="closed" id="lvl3"><img src="./image/icons/close-lock.svg" alt=""></div>
+                    <span>3</span>Gradient</li>
+                <li><article></article>
+                    <div class="closed" id="lvl4"><img src="./image/icons/close-lock.svg" alt=""></div>
+                    <span>4</span>Align</li>
+                <li><article></article>
+                    <div class="closed" id="lvl5"><img src="./image/icons/close-lock.svg" alt=""></div>
+                    <span>5</span>Attribute</li>
+                <li><article></article>
+                    <div class="closed" id="lvl6"><img src="./image/icons/close-lock.svg" alt=""></div>
+                    <span>6</span>Background</li>
+                <li><article></article>
+                    <div class="closed" id="lvl7"><img src="./image/icons/close-lock.svg" alt=""></div>
+                    <span>7</span>Transition</li>
+                <li><article></article>
+                    <div class="closed" id="lvl8"><img src="./image/icons/close-lock.svg" alt=""></div>
+                    <span>8</span>Font</li>
+                <li><article></article>
+                    <div class="closed" id="lvl9"><img src="./image/icons/close-lock.svg" alt=""></div>
+                    <span>9</span>Animation</li>
+                <li><article></article>
+                    <div class="closed" id="lvl10"><img src="./image/icons/close-lock.svg" alt=""></div>
+                    <span>10</span>Animation 2</li>
+            </ul>
+
+            <div class="menu_logo" id="menu-open">
+                <img src="./image/icons/menu.svg" alt="">
+            </div>
+        </nav>
+
+        <section class="content">
+            <h1>CSS Exercises</h1>
+            <p class="question">Սահմանեք «2px» հորիզոնական և «2px» ուղղահայաց, «կանաչ» տեքստի ստվեր <uu><span><</span>h1></uu> տարրի համար՝ «5px» blur շառավղով:</p>
+
+<div class="exercises">
+<pre>
+    <span><</span>style>
+        h1 {
+          text-shadow: <input type="text" id="text-shadow" style="width: 130px" oninput="TextShadow()" maxlength="17"> ;
+        }
+    <span><</span>/style>
+                            
+    <span><</span>body>
+        <span><</span>h1>This is a heading<span><</span>/h1>
+        <span><</span>p>This is a paragraph<span><</span>/p>
+        <span><</span>p>This is a paragraph<span><</span>/p>
+    <span><</span>/body>
+</pre>
+        
+        <button id="next-btn">Հաջորդը</button>
+</div>
+        </section>
+    </main>
+
+    <script src="./js/mian.js"></script>
+    <script src="./js/menu-level.js"></script>
+    <script src="./js/buttons.js"></script>
+</body>
+</html>

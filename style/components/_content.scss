@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+.home-btn{
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 0 1px 4px 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    img{
+        width: 30px;
+        filter: invert(69%) sepia(86%) saturate(7500%) hue-rotate(200deg) brightness(90%) contrast(105%);
+    }
+}
+.exercises{
+    background-color: rgba(223, 223, 223, 0.7);
+    border-radius: 20px;
+    padding: 30px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media screen and (max-width: 530px){
+        padding: 15px 7px 10px;
+    }
+    @media screen and (max-width: 465px){
+        flex-direction: column;
+        align-items:stretch;
+        button{
+            margin-top: 25px;
+        }
+    }
+    button{
+        padding: 13px 37px;
+        border-radius: 10px;
+        border: none;
+        color: rgb(0, 36, 214);
+        font-weight: 600;
+        font-family: 'Bokonique';
+        transition: 0.2s;
+        opacity: 0;
+        &:hover{
+            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+        }
+        &.active{
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}
+pre{
+    line-height: 24px;
+    font-size: 16px;
+    box-sizing: border-box;
+    input{
+        border: none;
+        padding: 2px;
+        font-size: 15px;
+        &:focus{
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+.content{
+    width: 100%;
+    margin-right: 55px;
+    @media screen and (max-width: 900px){
+        margin: 0 auto;
+        width: 90%;
+    }
+    p{
+        color: #fff;
+        margin-bottom: 20px;
+        margin-top: 25px;
+        // font-family: 'Bokonique';
+        // font-size: 14px;
+        // font-weight: 100;
+        letter-spacing: 0.5px;
+        @media screen and (max-width: 465px){
+            font-size: 13px;
+            margin-top: 15px;
+        }
+        uu{
+            background: rgba(223, 223, 223, 0.7);
+            padding: 0 2px;
+        }
+    }
+    h1{
+        color: #fff;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 60px;
+        @media screen and (max-width: 465px){
+            font-size: 45px;
+        }
+    }
+}

@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+body, * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../../image/background/background.svg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.green {
+  color: green;
+}
+
+.home-btn {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 1px 4px 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.home-btn img {
+  width: 30px;
+  -webkit-filter: invert(69%) sepia(86%) saturate(7500%) hue-rotate(200deg) brightness(90%) contrast(105%);
+          filter: invert(69%) sepia(86%) saturate(7500%) hue-rotate(200deg) brightness(90%) contrast(105%);
+}
+
+.exercises {
+  background-color: rgba(223, 223, 223, 0.7);
+  border-radius: 20px;
+  padding: 30px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 530px) {
+  .exercises {
+    padding: 15px 7px 10px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .exercises {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .exercises button {
+    margin-top: 25px;
+  }
+}
+
+.exercises button {
+  padding: 13px 37px;
+  border-radius: 10px;
+  border: none;
+  color: #0024d6;
+  font-weight: 600;
+  font-family: 'Bokonique';
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.exercises button:hover {
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+.exercises button.active {
+  opacity: 1;
+  cursor: pointer;
+}
+
+pre {
+  line-height: 24px;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+pre input {
+  border: none;
+  padding: 2px;
+  font-size: 15px;
+}
+
+pre input:focus {
+  border: none;
+  outline: none;
+}
+
+.content {
+  width: 100%;
+  margin-right: 55px;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+.content p {
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 465px) {
+  .content p {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+}
+
+.content p uu {
+  background: rgba(223, 223, 223, 0.7);
+  padding: 0 2px;
+}
+
+.content h1 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 465px) {
+  .content h1 {
+    font-size: 45px;
+  }
+}
+
+@font-face {
+  font-family: 'Bokonique';
+  src: url("../../fonts/Bokonique-Bold.woff2") format("woff2"), url("../../fonts/Bokonique-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bokonique';
+  src: url("../../fonts/Bokonique-BoldItalic.woff2") format("woff2"), url("../../fonts/Bokonique-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bokonique';
+  src: url("../../fonts/Bokonique-LightItalic.woff2") format("woff2"), url("../../fonts/Bokonique-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bokonique';
+  src: url("../../fonts/Bokonique-Regular.woff2") format("woff2"), url("../../fonts/Bokonique-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bokonique';
+  src: url("../../fonts/Bokonique-Light.woff2") format("woff2"), url("../../fonts/Bokonique-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bokonique';
+  src: url("../../fonts/Bokonique-Italic.woff2") format("woff2"), url("../../fonts/Bokonique-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+.menu {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: -285px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    position: fixed;
+  }
+}
+
+.menu.active {
+  margin-left: 0;
+}
+
+.menu_logo {
+  background: #fff;
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 5px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  cursor: pointer;
+}
+
+.menu_logo img {
+  width: 35px;
+  -webkit-filter: invert(69%) sepia(86%) saturate(7500%) hue-rotate(200deg) brightness(90%) contrast(105%);
+          filter: invert(69%) sepia(86%) saturate(7500%) hue-rotate(200deg) brightness(90%) contrast(105%);
+}
+
+.menu .white {
+  position: absolute;
+  z-index: 1;
+  height: 10%;
+  width: 70%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, white 100%);
+  bottom: 0;
+}
+
+.menu ul {
+  background: #fff;
+  height: 100%;
+  padding: 40px 45px 30px 30px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.menu ul::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+.menu ul::-webkit-scrollbar-thumb {
+  background: linear-gradient(153deg, #00011b 0%, #00126b 47%, #0022c6 100%);
+}
+
+.menu ul li {
+  white-space: nowrap;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  background-color: rgba(165, 165, 165, 0.1);
+  width: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 7px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.menu ul li article {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 2;
+}
+
+.menu ul li span {
+  width: 30px;
+  height: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(153deg, #00011b 0%, #00126b 47%, #0022c6 100%);
+  margin-right: 10px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.menu ul li div {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  left: 0;
+  z-index: 1;
+}
+
+.menu ul li div.closed {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.menu ul li div.open {
+  cursor: pointer;
+}
+
+.menu ul li div.see {
+  z-index: 5;
+  cursor: pointer;
+}
+
+.menu ul li div img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.finish-game-back {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  -webkit-animation: opener 1s 0s forwards;
+          animation: opener 1s 0s forwards;
+}
+
+.finish-game-back.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes opener {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opener {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.finish-game {
+  width: 300px;
+  background: #fff;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+}
+
+.finish-game h3 {
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.finish-game p {
+  margin: 15px 0 30px;
+}
+
+.finish-game button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  background: green;
+  color: #fff;
+  font-family: 'Bokonique';
+  cursor: pointer;
+}
+
+.finish-game .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.finish-game .btn button {
+  width: 47%;
+}
+
+.finish-game .btn a {
+  width: 47%;
+  text-decoration: none;
+  font-family: 'Bokonique';
+  font-size: 14px;
+  color: red;
+  border: 2px solid red;
+  padding: 8px 0;
+}
+/*# sourceMappingURL=style.css.map */
