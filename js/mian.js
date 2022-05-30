@@ -27,7 +27,7 @@ img {
 <span><</span>/style>
 
 <span><</span>body>
-    <span><</span>img src="klematis.jpg" width="150" height="113">
+    <span><</span>img src="klematis.jpg" width="150">
 <span><</span>/body>`;
         })
 
@@ -174,9 +174,9 @@ function Align(){
                 document.querySelector('.question').innerHTML = `
                 Սահմանեք <uu><span><</span>img></uu> տարրերի համար border, որոնք ունեն վերնագրի հատկանիշ և պարունակում են կապույտ բառը:`
                 document.querySelector('.exercises > pre').innerHTML = `<span><</span>style>
-img<input type="text" id="attribute" style="width: 95px" oninput="Attribute()" maxlength="15">{
-  border: 5px solid red;
-}
+    img<input type="text" id="attribute" style="width: 95px" oninput="Attribute()" maxlength="15">{
+      border: 5px solid red;
+    }
 <span><</span>/style>
                 
 <span><</span>body>
@@ -224,11 +224,11 @@ function Attribute(){
                 Տեղադրեք երկու ֆոնային պատկերները յուրաքանչյուր վերին անկյունում: <br>
                 <uu>img1.gif</uu> ձախ կողմում և <uu>img2.gif</uu> աջ կողմում:`
                 document.querySelector('.exercises > pre').innerHTML = `<span><</span>style>
-body {
-  background-image: url('img1.gif'), url('img2.gif');
-  background-repeat: no-repeat, no-repeat;
-  <input type="text" id="background" style="width: 147px" oninput="Background()" maxlength="19">: <input type="text" id="background2" style="width: 51px" oninput="Background()" maxlength="8">, <input type="text" id="background3" style="width: 60px" oninput="Background()" maxlength="9">;
-}
+    body {
+      background-image: url('img1.gif'), url('img2.gif');
+      background-repeat: no-repeat, no-repeat;
+      <input type="text" id="background" style="width: 147px" oninput="Background()" maxlength="19">: <input type="text" id="background2" style="width: 51px" oninput="Background()" maxlength="8">, <input type="text" id="background3" style="width: 60px" oninput="Background()" maxlength="9">;
+    }
 <span><</span>/style>
                 
 <span><</span>body>
@@ -280,17 +280,17 @@ function Background(){
                     document.querySelector('.question').innerHTML = `
                     Ավելացրեք 2 վայրկյան անցումային էֆեկտ ֆոնի համար և փոխակերպեք <uu><span><</span>div></uu> տարրի փոփոխությունները:`
                     document.querySelector('.exercises > pre').innerHTML = `<span><</span>style>
-div {
-  width: 100px;
-  height: 100px;
-  background: red;
-  transition: <input type="text" id="transition" style="width: 105px" oninput="Transition()" maxlength="13">, <input type="text" id="transition2" style="width: 91px" oninput="Transition()" maxlength="12">;
-}
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: <input type="text" id="transition" style="width: 105px" oninput="Transition()" maxlength="13">, <input type="text" id="transition2" style="width: 91px" oninput="Transition()" maxlength="12">;
+    }
                     
-div:hover {
-  background: blue;
-  transform: rotate(180deg);
-}
+    div:hover {
+      background: blue;
+      transform: rotate(180deg);
+    }
 <span><</span>/style>
 
 <span><</span>body>
